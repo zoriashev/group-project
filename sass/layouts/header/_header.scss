@@ -1,0 +1,16 @@
+.menu-container {
+  height: 100vh;
+  padding: 35px 0 0 60px;
+  background-image: url(../../../images/hero-bgd-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  width: 80px;
+}
+.header__container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
