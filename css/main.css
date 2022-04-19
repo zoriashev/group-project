@@ -41,6 +41,21 @@ button {
   cursor: pointer;
 }
 
+.section {
+  padding: 50px 0;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(36 / 24);
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -58,6 +73,8 @@ button {
   background-image: url(../../../images/hero-bgd-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
 }
 
 .logo {
@@ -97,6 +114,12 @@ button {
   opacity: 1;
   position: fixed;
   top: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-hidden {
@@ -164,5 +187,159 @@ button {
 
 .select--lang {
   margin-bottom: 25px;
+}
+
+.hero {
+  background-image: url(../../images/hero-bgd-mobile.jpg);
+  background-size: cover;
+  padding: 60px 10px 0 10px;
+  height: 774px;
+}
+
+.hero__heading {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.hero__input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: 1px solid #838485;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 27.5px;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.hero__input::-webkit-input-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #838485;
+}
+
+.hero__input:-ms-input-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #838485;
+}
+
+.hero__input::-ms-input-placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #838485;
+}
+
+.hero__input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #838485;
+}
+
+.form__field {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  right: 11px;
+  top: 12px;
+}
+
+.button--submit {
+  width: 100%;
+  min-height: 41px;
+  background-color: #3760ef;
+  color: white;
+  -webkit-box-shadow: 0px 4px 40px rgba(255, 255, 255, 0.15);
+          box-shadow: 0px 4px 40px rgba(255, 255, 255, 0.15);
+  border-radius: 27.5px;
+}
+
+.feature__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: #ffffff;
+}
+
+.feature__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.feature__item::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(../../images/Check_ring_light.svg);
+}
+
+.feature {
+  position: absolute;
+  bottom: 0;
+  padding-left: 50px;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  width: 100vw;
+  -webkit-transform: translateY(138%);
+          transform: translateY(138%);
+}
+
+.company__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.company__logo {
+  width: 64px;
+  height: 64px;
+}
+
+.reviews {
+  background-color: #f8f9ff;
 }
 /*# sourceMappingURL=main.css.map */

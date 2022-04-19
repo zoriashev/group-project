@@ -1,0 +1,53 @@
+.hero {
+  background-image: url(../../images/hero-bgd-mobile.jpg);
+  background-size: cover;
+  padding: 60px 10px 0 10px;
+  height: 774px;
+}
+
+.hero__heading {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.hero__input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: 1px solid #838485;
+  box-sizing: border-box;
+  border-radius: 27.5px;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 15px;
+
+  &::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #838485;
+  }
+}
+
+.form__field {
+  position: relative;
+}
+.form__icon {
+  position: absolute;
+  right: 11px;
+  top: 12px;
+}
+.button--submit {
+  width: 100%;
+  min-height: 41px;
+  background-color: #3760ef;
+  color: white;
+  box-shadow: 0px 4px 40px rgba(255, 255, 255, 0.15);
+  border-radius: 27.5px;
+}

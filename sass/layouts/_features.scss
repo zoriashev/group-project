@@ -1,0 +1,34 @@
+.feature__list {
+  justify-content: center;
+  align-items: center;
+}
+.feature__item {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url(../../images/Check_ring_light.svg);
+  }
+  display: flex;
+  align-items: center;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: #ffffff;
+}
+.feature {
+  position: absolute;
+  bottom: 0;
+  padding-left: 50px;
+  backdrop-filter: blur(6px);
+  width: 100vw;
+  transform: translateY(138%);
+}

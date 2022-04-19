@@ -1,0 +1,10 @@
+.company__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.company__logo {
+  width: 64px;
+  height: 64px;
+}
